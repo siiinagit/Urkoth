@@ -1,0 +1,138 @@
+* , *:before , *::after {
+    box-sizing: border-box;
+    font-size: 63%;
+}
+body{
+    background: url(images/bcg_image.png) center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-size: 10rem;
+    font-family: terraria;
+    overflow: hidden;
+}
+
+.narrowbody{
+    width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+    transition: all 200ms cubic-bezier(0.2,0.4,0.5,0.3);
+}
+.nav{
+    width: 100%;
+    height: 15vh;
+    /* background-color: #fff; */
+    
+}
+.lists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.lists li{
+    list-style-type: none;
+}
+.lists li a{
+    text-decoration: none;
+    font-size: 4.2rem;
+    color: black;
+    transition: all 150ms cubic-bezier(0.5,0.2,0.7,0.2);
+}
+.list li a:hover{
+    background-color: #fff;
+    color: blue;
+}
+.lists li:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 250ms cubic-bezier(0.5,0.2,0.7,0.2);
+}
+.lists li:hover::after{
+    width: 100%;
+}
+.windows_middle{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.youtube_window{
+    width: 45%;
+    font-size: 3.6rem;
+}
+.youtube_window li{
+    list-style-type: none;
+}
+.youtube_window img{
+    width: 50%;
+}
+.about_window{
+    width: 45%;
+    color: #28201e;
+    font-size: 2.8rem;
+}
+.red{
+    color: #c4302b;
+    font-size: 4rem;
+}
+
+footer{
+    height: 15vh;
+    width: 100%;
+}
+footer .foot_wraper{
+    width: 66%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.foot_wraper li{
+    margin-left: 5rem;
+    list-style-type: none;
+}
+.foot_wraper li img{
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: all 100ms ease-out;
+}
+.foot_wraper li img:hover{
+    transform: scale(1.2) translateY(-10px);
+}
+.nagib, .scale, .terra{
+    transition: all 280ms ease-in;
+}
+.nagib:hover{
+    transform: rotateZ(20deg) translate(100px);
+}
+.scale:hover{
+    transform: scale(1.2);
+}
+.terra:hover{
+    transform: translate(30px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: terraria;
+    src: url(fonts/AndyBold/Andy\ Bold.ttf);
+}
